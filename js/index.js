@@ -1,3 +1,3 @@
-var tds = document.getElementsByTagName("td");
+var tds = document.querySelectorAll("title");
 
-console.log("td");
+console.log(tds);
