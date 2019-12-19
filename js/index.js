@@ -1,5 +1,3 @@
-var json = require('./json/horarios.json');
+var tds = document.getElementsByTagName("td");
 
-json = JSON.parse(json);
-
-document.getElementById("text").textContent = json;
+console.log("td");
