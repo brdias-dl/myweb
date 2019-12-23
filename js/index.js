@@ -77,20 +77,21 @@ window.onload = () => {
         aulasArray.push(elemento);
         document.getElementById("aulas").appendChild(elemento);
         document.getElementById("GenerateJSON").innerText = JSON.stringify(aulasArray);
+        console.log(aulasArray);
 
         $.ajax({
             type: "POST",
             dataType: 'json',
             async: false,
-            url: 'http://your.host/save_json.php',
+            url: 'https://brdias-dl.github.io/myweb/save_json.php',
             data: {
-                data: JSON.stringify(eventsholded)
+                data: JSON.stringify(aulasArray)
             },
             success: function () {
-                alert("Thanks!");
+                console.log("Saved!");
             },
             failure: function () {
-                alert("Error!");
+                console.log("Error!");
             }
         });
     }
