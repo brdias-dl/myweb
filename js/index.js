@@ -23,14 +23,14 @@ window.onload = () => {
 
         //Criar Nome da Aula
         elemento_nomeDaAula = document.createElement("p");
-        elemento_nomeDaAula.createTextNode(nomeDaAula.textContent);
+        elemento_nomeDaAula.appendChild(document.createTextNode(nomeDaAula.textContent));
         elemento.appendChild(elemento_nomeDaAula);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Nome do Professor
-        elemento_nomeDaAula = document.createElement("p");
-        elemento_nomeDoProfessor.createTextNode(nomeDoProfessor.textContent);
+        nomeDoProfessor = document.createElement("p");
+        nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.textContent));
         elemento.appendChild(elemento_nomeDoProfessor);
 
         elemento.appendChild(document.createElement("br"));
@@ -38,44 +38,43 @@ window.onload = () => {
         //Criar Tipo de Aula
         elemento_opcao = document.createElement("p");
         if (opcaoPL.checked) {
-            elemento_opcao.createTextNode("Tipo de aula: (PL)");
+            elemento_opcao.appendChild(document.createTextNode("Tipo de aula: (PL)"));
         } else {
-            elemento_opcao.createTextNode("Tipo de aula: (TP)");
+            elemento_opcao.appendChild(document.createTextNode("Tipo de aula: (TP)"));
         }
-        elemento.appendChild(elemento_nomeDoProfessor);
+        elemento.appendChild(elemento_opcao);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Semana
         elemento_semana = document.createElement("p");
-        elemento_semana.createTextNode(numeroSemana1.textContent + "|" + numeroSemana2.textContent);
+        elemento_semana.appendChild(document.createTextNode(numeroSemana1.textContent + "|" + numeroSemana2.textContent));
         elemento.appendChild(elemento_semana);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Local
         elemento_local = document.createElement("p");
-        elemento_local.createTextNode(nomeEdificio.textContent + "|" + nomeSala.textContent);
+        elemento_local.appendChild(document.createTextNode(nomeEdificio.textContent + "|" + nomeSala.textContent));
         elemento.appendChild(elemento_local);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Dia da Semana
         elemento_diaSemana = document.createElement("p");
-        elemento_diaSemana.createTextNode(diaSemana.textContent);
+        elemento_diaSemana.appendChild(document.createTextNode(diaSemana.textContent));
         elemento.appendChild(elemento_diaSemana);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Hora
         elemento_hora = document.createElement("p");
-        elemento_hora.createTextNode(numeroHora1.textContent + "|" + numeroHora2.textContent);
+        elemento_hora.appendChild(document.createTextNode(numeroHora1.textContent + "|" + numeroHora2.textContent));
         elemento.appendChild(elemento_hora);
 
 
 
         aulasArray.push(elemento);
-
         document.getElementById("aulas").appendChild(elemento);
     }
 }
