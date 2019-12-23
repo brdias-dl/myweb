@@ -12,27 +12,32 @@
 <body>
     <div id="website">
         <h1>Adicionar Aula</h1>
-        <div class="info">
-            <p>Nome da Aula:</p> <input type="text">
-            <p>Nome do Professor:</p><input type="text">
-        </div>
-        <br>
-        <div class="info">
-            <p>Tipo de Aula:</p>
-            PL<input type="radio" name="tipoaula">
-            TP<input type="radio" name="tipoaula">
-        </div>
-        <br>
-        <div class="info">
-            <p>Da semana <input type="number"> a <input type="number"></p>
-            <p>Edificio da Sala: <input type="text"> Número da Sala: <input type="number"></p>
-        </div>
-        <br>
-        <div class="info">
-            <p>Dia da Semana: <input type="date" min="2020-01-01" max="2025-12-31"></p>
-            <p>Horas da Aula: <input type="time" min="09:00" max="18:00" required> a <input type="time" min="09:00"
-                    max="18:00" required></p>
-        </div>
+        <label for="escolha-aula">Nome da Aula</label>
+        <input list="escolha-aula" />
+
+        <datalist>
+            <option value="Tecnologias Emergentes">
+            <option value="Tecnologias de Mercado">
+        </datalist>
+        <p>Nome do Professor:</p><input type="text">
+    </div>
+    <br>
+    <div class="info">
+        <p>Tipo de Aula:</p>
+        PL<input type="radio" name="tipoaula">
+        TP<input type="radio" name="tipoaula">
+    </div>
+    <br>
+    <div class="info">
+        <p>Da semana <input type="number"> a <input type="number"></p>
+        <p>Edificio da Sala: <input type="text"> Número da Sala: <input type="text"></p>
+    </div>
+    <br>
+    <div class="info">
+        <p>Dia da Semana: <input type="date" min="2020-01-01" max="2025-12-31"></p>
+        <p>Horas da Aula: <input type="time" min="09:00" max="18:00" required> a <input type="time" min="09:00"
+                max="18:00" required></p>
+    </div>
     </div>
 </body>
 
