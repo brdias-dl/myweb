@@ -1,5 +1,5 @@
 window.onload = () => {
-    var aulas = [];
+    var aulasArray = [];
 
     //Obter os elementos
     var nomeDaAula = document.getElementById("escolha-aula");
@@ -14,7 +14,10 @@ window.onload = () => {
     var numeroHora1 = document.getElementById("escolha-hora1");
     var numeroHora2 = document.getElementById("escolha-hora2");
 
-    document.getElementById("btn-criar").onclick = () => {
+    document.getElementById("btn-criar").addEventListener("click", addAula);
+
+    function addAula() {
+
         aula = [];
         elemento = document.createElement("div");
 
@@ -71,7 +74,7 @@ window.onload = () => {
 
 
 
-        aulas.push(elemento);
+        aulasArray.push(elemento);
 
         document.getElementById("aulas").appendChild(elemento);
     }
