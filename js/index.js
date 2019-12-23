@@ -77,9 +77,21 @@ window.onload = () => {
         aulasArray.push(elemento);
         document.getElementById("aulas").appendChild(elemento);
         document.getElementById("GenerateJSON").innerText = JSON.stringify(aulasArray);
-        document.getElementById("btn-open").addEventListener("click", () => {
-            var win = window.open("https://github.com/brdias-dl/myweb/edit/master/aulas.json", '_blank');
-            win.focus();
+
+        $.ajax({
+            type: "POST",
+            dataType: 'json',
+            async: false,
+            url: 'http://your.host/save_json.php',
+            data: {
+                data: JSON.stringify(eventsholded)
+            },
+            success: function () {
+                alert("Thanks!");
+            },
+            failure: function () {
+                alert("Error!");
+            }
         });
     }
 }
