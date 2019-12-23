@@ -14,30 +14,36 @@
         <h1>Adicionar Aula</h1>
         <div class="info">
             <label for="escolha-aula">Nome da Aula</label>
-            <input list="lista-aula" id="escolha-aula" />
+            <input list="lista-aula" id="escolha-aula" required />
             <br><br>
             <label for="escolha-aula">Nome do Professor</label>
-            <input list="lista-professores" id="escolha-professores" />
+            <input list="lista-professores" id="escolha-professores" required />
 
         </div>
         <br>
         <div class="info">
             Tipo de Aula:<br>
-            PL<input type="radio" name="tipoaula">
-            TP<input type="radio" name="tipoaula">
+            PL<input type="radio" name="tipoaula" id="escolha-pl">
+            TP<input type="radio" name="tipoaula" id="escolha-tp">
         </div>
         <br>
         <div class="info">
-            Da semana <input type="number"> a <input type="number"><br><br>
-            Edificio da Sala: <input type="text"><br><br> Número da Sala: <input type="text">
+            Da semana <input type="number" id="escolha-semana1" required> a <input type="number" id="escolha-semana2"
+                required><br><br>
+            Edificio da Sala: <input type="text" id="escolha-edificio" required><br><br> Número da Sala: <input
+                type="text" id="escolha-sala" required>
         </div>
         <br>
         <div class="info">
-            Dia da Semana: <input type="date" min="2020-01-01" max="2025-12-31"><br><br>
-            Horas da Aula: <input type="time" min="09:00" max="18:00" required> a <input type="time" min="09:00"
-                max="18:00" required>
+            Dia da Semana: <input type="date" min="2020-01-01" max="2025-12-31" id="escolha-diasemana" required><br><br>
+            Horas da Aula: <input type="time" min="09:00" max="18:00" value="09:00" id="escolha-hora1" required> a
+            <input type="time" min="09:00" max="18:00" value="18:00" id="escolha-hora2" required>
         </div>
+
+        <input type="button" value="Criar Aula" id="btn-aula">
     </div>
+
+    <div id="aulas" style="border: 10px; border-style: dotted;"></div>
 
 
 
