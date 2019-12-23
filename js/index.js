@@ -29,8 +29,8 @@ window.onload = () => {
         elemento.appendChild(document.createElement("br"));
 
         //Criar Nome do Professor
-        nomeDoProfessor = document.createElement("p");
-        nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.textContent));
+        elemento_nomeDoProfessor = document.createElement("p");
+        elemento_nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.textContent));
         elemento.appendChild(elemento_nomeDoProfessor);
 
         elemento.appendChild(document.createElement("br"));
