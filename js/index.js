@@ -26,14 +26,14 @@ window.onload = () => {
         elemento_nomeDaAula.appendChild(document.createTextNode(nomeDaAula.value));
         elemento.appendChild(elemento_nomeDaAula);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Nome do Professor
         elemento_nomeDoProfessor = document.createElement("p");
         elemento_nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.value));
         elemento.appendChild(elemento_nomeDoProfessor);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Tipo de Aula
         elemento_opcao = document.createElement("p");
@@ -44,28 +44,28 @@ window.onload = () => {
         }
         elemento.appendChild(elemento_opcao);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Semana
         elemento_semana = document.createElement("p");
         elemento_semana.appendChild(document.createTextNode(numeroSemana1.value + "|" + numeroSemana2.value));
         elemento.appendChild(elemento_semana);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Local
         elemento_local = document.createElement("p");
         elemento_local.appendChild(document.createTextNode(nomeEdificio.value + "|" + nomeSala.value));
         elemento.appendChild(elemento_local);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Dia da Semana
         elemento_diaSemana = document.createElement("p");
         elemento_diaSemana.appendChild(document.createTextNode(diaSemana.value));
         elemento.appendChild(elemento_diaSemana);
 
-        elemento.appendChild(document.createElement("br"));
+
 
         //Criar Hora
         elemento_hora = document.createElement("p");
