@@ -55,7 +55,7 @@ window.onload = () => {
 
         //Criar Local
         elemento_local = document.createElement("p");
-        elemento_local.appendChild(document.createTextNode(nomeEdificio.value + "|" + nomeSala.value));
+        elemento_local.appendChild(document.createTextNode(nomeEdificio.value + "." + nomeSala.value));
         elemento.appendChild(elemento_local);
 
 
@@ -76,5 +76,10 @@ window.onload = () => {
 
         aulasArray.push(elemento);
         document.getElementById("aulas").appendChild(elemento);
+        document.getElementById("GenerateJSON").innerText = JSON.stringify(aulasArray);
+        document.getElementById("btn-open").addEventListener("click", () => {
+            var win = window.open("", '_blank');
+            win.focus();
+        });
     }
 }
