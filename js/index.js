@@ -23,14 +23,14 @@ window.onload = () => {
 
         //Criar Nome da Aula
         elemento_nomeDaAula = document.createElement("p");
-        elemento_nomeDaAula.appendChild(document.createTextNode(nomeDaAula.textContent));
+        elemento_nomeDaAula.appendChild(document.createTextNode(nomeDaAula.value));
         elemento.appendChild(elemento_nomeDaAula);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Nome do Professor
         elemento_nomeDoProfessor = document.createElement("p");
-        elemento_nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.textContent));
+        elemento_nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.value));
         elemento.appendChild(elemento_nomeDoProfessor);
 
         elemento.appendChild(document.createElement("br"));
@@ -48,28 +48,28 @@ window.onload = () => {
 
         //Criar Semana
         elemento_semana = document.createElement("p");
-        elemento_semana.appendChild(document.createTextNode(numeroSemana1.textContent + "|" + numeroSemana2.textContent));
+        elemento_semana.appendChild(document.createTextNode(numeroSemana1.value + "|" + numeroSemana2.value));
         elemento.appendChild(elemento_semana);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Local
         elemento_local = document.createElement("p");
-        elemento_local.appendChild(document.createTextNode(nomeEdificio.textContent + "|" + nomeSala.textContent));
+        elemento_local.appendChild(document.createTextNode(nomeEdificio.value + "|" + nomeSala.value));
         elemento.appendChild(elemento_local);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Dia da Semana
         elemento_diaSemana = document.createElement("p");
-        elemento_diaSemana.appendChild(document.createTextNode(diaSemana.textContent));
+        elemento_diaSemana.appendChild(document.createTextNode(diaSemana.value));
         elemento.appendChild(elemento_diaSemana);
 
         elemento.appendChild(document.createElement("br"));
 
         //Criar Hora
         elemento_hora = document.createElement("p");
-        elemento_hora.appendChild(document.createTextNode(numeroHora1.textContent + "|" + numeroHora2.textContent));
+        elemento_hora.appendChild(document.createTextNode(numeroHora1.value + "|" + numeroHora2.value));
         elemento.appendChild(elemento_hora);
 
 
