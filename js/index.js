@@ -1,5 +1,6 @@
+var aulasArray = [];
+
 window.onload = () => {
-    var aulasArray = [];
 
     $("#btn-load").click((event) => {
         $.getJSON('aulas.json', function (jd) {
@@ -145,7 +146,7 @@ window.onload = () => {
         $.ajax({
             type: "POST",
             dataType: 'json',
-            async: false,
+            async: true,
             url: 'https://brdias-dl.github.io/myweb/save_json.php',
             data: {
                 data: JSON.stringify(aulasArray)
