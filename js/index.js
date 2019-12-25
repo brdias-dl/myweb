@@ -145,11 +145,13 @@ window.onload = () => {
         aulasArray.push(elemento);
         document.getElementById("aulas").appendChild(elemento);
 
+        console.log("Passed the AJAX");
+
         $.ajax({
             type: "POST",
             dataType: 'json',
             async: true,
-            url: '/save_json.php',
+            url: 'save_json.php',
             data: {
                 data: JSON.stringify(aulasArray)
             },
@@ -161,6 +163,6 @@ window.onload = () => {
             }
         });
 
-        console.log("Passed the AJAX")
+        console.log("Passed the AJAX");
     }
 }
