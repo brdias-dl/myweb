@@ -160,7 +160,7 @@ window.onload = () => {
             type: "POST",
             dataType: 'json',
             async: true,
-            url: 'save_json.php',
+            url: '/save_json.php',
             data: {
                 data: thisbenice
             },
