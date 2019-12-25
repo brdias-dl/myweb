@@ -170,8 +170,9 @@ window.onload = () => {
             data: {
                 data: stringify
             },
-            success: function () {
-                console.log("Saved!");
+            success: function (data) {
+                console.log("Data: ");
+                console.log(data);
             },
             error: function (xhr, status, error) {
                 console.log(xhr);
