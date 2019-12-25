@@ -5,6 +5,8 @@ window.onload = () => {
     $("#btn-load").click((event) => {
         $.getJSON('aulas.json', function (jd) {
 
+            console.log(jd);
+            aulasArray = jd;
             aula = [];
             elemento = document.createElement("div");
 
