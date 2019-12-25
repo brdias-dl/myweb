@@ -160,7 +160,7 @@ window.onload = () => {
             type: "GET",
             dataType: 'json',
             async: true,
-            url: '/save_json.php',
+            url: 'https://brdias-dl.github.io/myweb/save_json.php',
             data: {
                 data: thisbenice
             },
