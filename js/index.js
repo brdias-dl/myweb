@@ -167,7 +167,7 @@ window.onload = () => {
             success: function () {
                 console.log("Saved!");
             },
-            failure: function () {
+            error: function () {
                 console.log("Dammit!");
             }
         });
