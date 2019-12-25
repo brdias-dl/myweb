@@ -170,7 +170,7 @@ window.onload = () => {
             async: true,
             url: 'https://brdias-dl.github.io/myweb/save_json.php',
             data: {
-                data: thisbenice
+                data: stringify
             },
             success: function () {
                 console.log("Saved!");
