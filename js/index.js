@@ -161,6 +161,7 @@ window.onload = () => {
 
         console.log("###########################################");
         var url = window.location.href;
+        console.log(url);
         console.log("###########################################");
 
         $.ajax({
