@@ -152,9 +152,11 @@ window.onload = () => {
         document.getElementById("aulas").appendChild(elemento);
 
         console.log("Before the AJAX");
-        let thisbenice = JSON.parse(aulasArray);
         console.log(aulasArray);
-        console.log(thisbenice);
+        let parse = JSON.parse(aulasArray);
+        console.log(parse);
+        let stringify = JSON.stringify(aulasArray);
+        console.log(stringify);
 
         console.log("###########################################");
         var url = window.location.href;
