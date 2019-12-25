@@ -149,7 +149,7 @@ window.onload = () => {
             type: "POST",
             dataType: 'json',
             async: true,
-            url: 'https://brdias-dl.github.io/myweb/save_json.php',
+            url: '/save_json.php',
             data: {
                 data: JSON.stringify(aulasArray)
             },
@@ -160,5 +160,7 @@ window.onload = () => {
                 console.log("Dammit!");
             }
         });
+
+        console.log("Passed the AJAX")
     }
 }
