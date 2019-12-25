@@ -153,10 +153,11 @@ window.onload = () => {
 
         console.log("Before the AJAX");
         console.log(aulasArray);
-        let parse = JSON.parse(aulasArray);
-        console.log(parse);
         let stringify = JSON.stringify(aulasArray);
         console.log(stringify);
+        let parse = JSON.parse(stringify);
+        console.log(parse);
+
 
         console.log("###########################################");
         var url = window.location.href;
