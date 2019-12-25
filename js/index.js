@@ -152,9 +152,13 @@ window.onload = () => {
         document.getElementById("aulas").appendChild(elemento);
 
         console.log("Before the AJAX");
-        let thisbenice = JSON.stringify(aulasArray);
+        let thisbenice = JSON.parse(aulasArray);
         console.log(aulasArray);
         console.log(thisbenice);
+
+        console.log("###########################################");
+        var url = window.location.href;
+        console.log("###########################################");
 
         $.ajax({
             type: "GET",
