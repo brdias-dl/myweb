@@ -157,7 +157,7 @@ window.onload = () => {
         console.log(thisbenice);
 
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             async: true,
             url: '/save_json.php',
