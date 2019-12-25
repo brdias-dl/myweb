@@ -165,7 +165,7 @@ window.onload = () => {
         console.log("###########################################");
 
         $.ajax({
-            type: "GET",
+            type: "PUT",
             dataType: 'json',
             async: true,
             url: 'https://brdias-dl.github.io/myweb/save_json.php',
