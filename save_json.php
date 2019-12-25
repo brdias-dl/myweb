@@ -2,7 +2,7 @@
 $myFile = "aulas.json";
 $fh = fopen($myFile, 'w');
 $stringData = $_GET["data"];
-echo $stringData;
+echo $fh;
 fwrite($fh, $stringData);
 fclose($fh);
 ?>
