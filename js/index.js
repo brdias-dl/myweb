@@ -87,12 +87,13 @@ window.onload = () => {
     function addAula() {
 
         var aula;
-        elemento = document.createElement("div");
+        var elemento = document.createElement("div");
 
         //Criar Nome da Aula
         elemento_nomeDaAula = document.createElement("p");
         elemento_nomeDaAula.appendChild(document.createTextNode(nomeDaAula.value));
         elemento.appendChild(elemento_nomeDaAula);
+        aula.nome = nomeDaAula.value;
 
 
 
@@ -100,24 +101,27 @@ window.onload = () => {
         elemento_nomeDoProfessor = document.createElement("p");
         elemento_nomeDoProfessor.appendChild(document.createTextNode(nomeDoProfessor.value));
         elemento.appendChild(elemento_nomeDoProfessor);
-
+        aula.professor = nomeDoProfessor.value;
 
 
         //Criar Tipo de Aula
         elemento_opcao = document.createElement("p");
         if (opcaoPL.checked) {
             elemento_opcao.appendChild(document.createTextNode("Tipo de aula: (PL)"));
+            aula.tipo = "Tipo de aula: (PL)";
+
         } else {
             elemento_opcao.appendChild(document.createTextNode("Tipo de aula: (TP)"));
+            aula.tipo = "Tipo de aula: (TP)";
         }
         elemento.appendChild(elemento_opcao);
-
 
 
         //Criar Semana
         elemento_semana = document.createElement("p");
         elemento_semana.appendChild(document.createTextNode(numeroSemana1.value + "|" + numeroSemana2.value));
         elemento.appendChild(elemento_semana);
+        aula.semana = numeroSemana1.value + "|" + numeroSemana2.value;
 
 
 
@@ -125,6 +129,7 @@ window.onload = () => {
         elemento_local = document.createElement("p");
         elemento_local.appendChild(document.createTextNode(nomeEdificio.value + "." + nomeSala.value));
         elemento.appendChild(elemento_local);
+        aula.local = nomeEdificio.value + "." + nomeSala.value;
 
 
 
@@ -132,17 +137,18 @@ window.onload = () => {
         elemento_diaSemana = document.createElement("p");
         elemento_diaSemana.appendChild(document.createTextNode(diaSemana.value));
         elemento.appendChild(elemento_diaSemana);
-
+        aula.diaSemana = diaSemana.value;
 
 
         //Criar Hora
         elemento_hora = document.createElement("p");
         elemento_hora.appendChild(document.createTextNode(numeroHora1.value + "|" + numeroHora2.value));
         elemento.appendChild(elemento_hora);
+        aula.hora = numeroHora1.value + "|" + numeroHora2.value;
 
 
 
-        aulasArray.push(elemento);
+        aulasArray.push(aula);
         document.getElementById("aulas").appendChild(elemento);
 
         console.log("Before the AJAX");
