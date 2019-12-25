@@ -167,9 +167,10 @@ window.onload = () => {
             success: function () {
                 console.log("Saved!");
             },
-            error: function (textStatus) {
-                console.log(textStatus);
-                console.log("Dammit!");
+            error: function (xhr, status, error) {
+                console.log("XHR: " + xhr);
+                console.log("Status: " + status);
+                console.log("Error: " + error);
             }
         });
 
