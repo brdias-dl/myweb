@@ -165,10 +165,10 @@ window.onload = () => {
         console.log("###########################################");
 
         $.ajax({
-            type: "PUT",
+            type: "POST",
             dataType: 'json',
             async: true,
-            url: 'https://brdias-dl.github.io/myweb/save_json.php',
+            url: `${url}save_json.php`,
             data: {
                 data: stringify
             },
