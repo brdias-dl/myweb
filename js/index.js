@@ -147,6 +147,7 @@ window.onload = () => {
 
         console.log("Before the AJAX");
         let thisbenice = JSON.stringify(aulasArray);
+        console.log(aulasArray);
         console.log(thisbenice);
 
         $.ajax({
