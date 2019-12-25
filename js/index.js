@@ -2,7 +2,7 @@ var aulasArray = [];
 
 window.onload = () => {
 
-    $("#btn-load").click((event) => {
+    /*$("#btn-load").click((event) => {
         $.getJSON('aulas.json', function (jd) {
 
             console.log(jd);
@@ -67,7 +67,7 @@ window.onload = () => {
             document.getElementById("aulas").appendChild(elemento);
 
         });
-    });
+    });*/
 
     //Obter os elementos
     var nomeDaAula = document.getElementById("escolha-aula");
@@ -86,7 +86,7 @@ window.onload = () => {
 
     function addAula() {
 
-        var aula;
+        var aula = {};
         var elemento = document.createElement("div");
 
         //Criar Nome da Aula
