@@ -1,7 +1,8 @@
 <?php
 $myFile = "aulas.json";
-$fh = fopen($myFile, 'w') or die("can't open file");
+$fh = fopen($myFile, 'w');
 $stringData = $_GET["data"];
+echo = $stringData;
 fwrite($fh, $stringData);
 fclose($fh)
 ?>

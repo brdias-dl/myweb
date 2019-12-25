@@ -155,8 +155,6 @@ window.onload = () => {
         console.log(aulasArray);
         let stringify = JSON.stringify(aulasArray);
         console.log(stringify);
-        let parse = JSON.parse(stringify);
-        console.log(parse);
 
 
         console.log("###########################################");
