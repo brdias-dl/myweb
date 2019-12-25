@@ -145,7 +145,9 @@ window.onload = () => {
         aulasArray.push(elemento);
         document.getElementById("aulas").appendChild(elemento);
 
-        console.log("Passed the AJAX");
+        console.log("Before the AJAX");
+        let thisbenice = JSON.stringify(aulasArray);
+        console.log(thisbenice);
 
         $.ajax({
             type: "POST",
@@ -153,7 +155,7 @@ window.onload = () => {
             async: true,
             url: 'save_json.php',
             data: {
-                data: JSON.stringify(aulasArray)
+                data: thisbenice
             },
             success: function () {
                 console.log("Saved!");
