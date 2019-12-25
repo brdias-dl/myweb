@@ -1,3 +1,8 @@
 <?php
-echo "FUCK";
+$myFile = "aulas.json";
+$fh = fopen($myFile, 'w');
+$stringData = $_GET["data"];
+echo $fh;
+fwrite($fh, $stringData);
+fclose($fh);
 ?>
