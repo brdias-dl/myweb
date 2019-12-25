@@ -165,7 +165,7 @@ window.onload = () => {
         console.log("###########################################");
 
         $.ajax({
-            type: "POST",
+            method: "GET",
             dataType: 'json',
             async: true,
             url: `${url}save_json.php`,
